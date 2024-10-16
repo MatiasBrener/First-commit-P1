@@ -92,21 +92,24 @@ public class Pep {
 	
 	public void disparar() {
 		
+		
 	}
 	
 	
 	public void saltar() {
 		
+		this.y = this.y - 45;
+
 	}
 
 	
-	public void moverDerecha()
-	{
+	public void moverDerecha(){
+	
 		this.x = this.x + 3;
 	}
 	
-	public void moverIzquierda()
-	{
+	public void moverIzquierda(){
+	
 		this.x = this.x - 3;
 	}
 	

@@ -87,15 +87,28 @@ public class Juego extends InterfaceJuego
 		
 		if(this.entorno.estaPresionada(this.entorno.TECLA_IZQUIERDA) &&
 				this.pep.getX() - this.pep.getAncho()/2 > 0)
-			
 			this.pep.moverIzquierda();
 				
+		
+		if(this.entorno.sePresiono(this.entorno.TECLA_ARRIBA) &&
+				this.pep.getY() + this.pep.getAncho()/2 <
+				this.entorno.ancho())
+			this.pep.saltar();
+		
+		
+		
 		
 		
 		for(int i = 0; i < this.isla.length; i++) {
 			this.isla[i].dibujar(this.entorno);			}
 		
 		this.pep.dibujar(this.entorno);
+		
+		
+		
+				
+		
+		
 		
 	}
 	
